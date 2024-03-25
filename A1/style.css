@@ -3,7 +3,7 @@
 --cor-de-fundo: #eb7fca;
 --texto1: #000000;
 --texto2: #FFFFFF;
---botao-ativo: #f7f7f7;
+--botao-ativo: rgba(204, 133, 189, 0.966);
 --botao-inativo: rgba(255, 255, 255, 0.5);
 --texto-fundo: rgba(58,55,94,0.3);
 }
@@ -36,4 +36,18 @@ body{
     font-size: 50px;
     align-items: center;
     width: 100%;
+}
+.botoes{
+
+    display:flex;
+}
+.botao:first-child{
+    border-radius:40px 0 0 40px;
+}
+.botao:last-child{
+    border-radius: 0 40px 40px 0;
+}
+.ativo{
+    background: var(--botao-ativo);
+    color:#f3f3f3;
 }
