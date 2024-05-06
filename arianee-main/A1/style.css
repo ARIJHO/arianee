@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+:root{
+--cor-de-fundo: #eb7fca;
+--texto1: #000000;
+--texto2: #FFFFFF;
+--botao-ativo: rgba(204, 133, 189, 0.966);
+--botao-inativo: rgba(255, 255, 255, 0.5);
+--texto-fundo: rgba(123, 48, 133, 0.3);
+}
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--texto1);
+    font-family:"Dancing Script", cursive;
+}
+
+.conteudo-principal{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.titulo-principal{
+    text-align: center;
+    width: 100%;
+    font-size: 75px;
+}
+.botao{
+    font-family: "Dancing Script", cursive;
+    background-color: var(--botao-inativo);
+    display: flex;
+    color:#ff00aa (--texto 1);
+    justify-content: center;
+    padding: 1 em;
+    font-size: 50px;
+    align-items: center;
+    width: 100%;
+}
+.botoes{
+
+    display:flex;
+}
+.botao:first-child{
+    border-radius:40px 0 0 0;
+}
+.botao:last-child{
+    border-radius: 0 40px 0 0;
+}
+.ativo{
+    background: var(--botao-ativo);
+    color:#f3f3f3;
+}
+.aba-conteudo{
+    font-size: 30px;
+}
+.aba-textos{
+    background-color:var(--texto-fundo);
+    padding: 80px;
+    border-radius: 0 0 40px 40px;
+}
+.aba-conteudo.ativo{
+    display:block;
+}
+.aba-conteudo{
+    display:none;
+}
+.aba-conteudo-titulo-principal{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(56, 2, 56);
+}
+.aba-conteudo-titulo-secundario{
+    font-size: 50px;
+    text-align: center;
+    color:#eb7fca
+}
+
+
+
+
+
+
+
